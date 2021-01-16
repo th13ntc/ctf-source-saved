@@ -20,4 +20,6 @@ Nào như mọi lần tui bắt đầu đi đọc code và kết luận vài dò
 - Param của mình truyền vào là đi qua hàm **safe_eval**
 - Trong **safe_eval**, nó đưa param của mình cho **is_safe** kiểm tra
 - Trong **is_safe**, nó bắt đầu chạy code các kiểu -> tóm tắt lại rằng: Chỉ được dùng các hàm trong toàn học, và toán tử +-\*/
--
+- Sau khi **is_safe** true sẽ cho chúng ta thực thi (eval), ngược lại sẽ xuất ra màn hình 1 chuỗi.
+
+> Vậy giải pháp rút ra là phải inject vào 1 đoạn code sao cho hàm **is_safe** trả về true rồi tạo thành 1 command có nghĩa để thực thi được đến server server.
