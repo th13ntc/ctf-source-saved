@@ -14,7 +14,7 @@ Ctr+U coi đi kiếm source xíu. Ồ cho file source nè:
 
 ![hinh3](https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.0-9/138395872_1360917480927583_7950565622394537985_n.png?_nc_cat=100&ccb=2&_nc_sid=730e14&_nc_ohc=HMV2LUg9jkUAX8eqRtb&_nc_ht=scontent.fsgn2-6.fna&oh=37fd2f612f637ea1f216aa900d2adc8c&oe=602818A5)
 
-![hinh4](https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/139774578_1360918004260864_8841010992383322256_o.png?_nc_cat=105&ccb=2&_nc_sid=730e14&_nc_ohc=uMDLxnc9iB8AX-A8RBK&_nc_ht=scontent.fsgn2-1.fna&oh=7adcceb4a7de133adbc823381609fe69&oe=6027AA47)
+![hinh4](https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.0-9/139193741_1360967837589214_4621736347075272027_n.png?_nc_cat=100&ccb=2&_nc_sid=730e14&_nc_ohc=7aM6q8fo3K8AX8SNyCb&_nc_ht=scontent.fsgn2-6.fna&oh=c0f13bebd2a13e2a6328c4dab36ed650&oe=60280BD5)
 
 Nào như mọi lần tui bắt đầu đi đọc code và kết luận vài dòng:
 
@@ -100,4 +100,4 @@ Hơi dài nhưng chỉ 405chars vẫn thỏa < 1024 của đề bài. Cuối cù
 ![hinh10](https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.0-9/139449877_1360956844256980_5107937802172987774_n.png?_nc_cat=110&ccb=2&_nc_sid=730e14&_nc_ohc=c2LKQLlWJnwAX8XJqRI&_nc_ht=scontent.fsgn2-6.fna&oh=652d2a0cf660532758b0dfc732742e23&oe=60277931)
 
 
-***Trên đây là tất cả write-up của mình về bài "Calc.exe Onl", trình còn kém nên làm còn mơ hồ, diễn giải có thể màu mè hoặc không đúng. Mong bạn đọc có thể đóng góp ý kiến <3***
+***Trên đây là tất cả write-up của mình về bài "Calc.exe Onl", trình còn kém nên làm còn mơ hồ, diễn giải có thể màu mè hoặc không đúng. Mong bạn đọc có thể đóng góp ý kiến <3 Chân thành cảm ơn!***
