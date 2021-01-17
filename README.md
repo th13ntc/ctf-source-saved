@@ -4,7 +4,7 @@
 
     .
     ├── BambooFox-CTF-01-2021
-    |   ├── [Web]-Calc.exe-Online
-    |   ├── [Web]-SSRFrog
+    |   ├── Web-Calc.exe-Online
+    |   ├── Web-SSRFrog
     ├──
     └── README.md
