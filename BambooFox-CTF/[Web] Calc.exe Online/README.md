@@ -115,5 +115,5 @@ Hơi dài nhưng chỉ 405chars vẫn thỏa < 1024 của đề bài. Cuối cù
 
 ***Trên đây là tất cả write-up của mình về bài "Calc.exe Onl", trình còn kém nên làm còn mơ hồ, diễn giải có thể màu mè hoặc không đúng. Mong bạn đọc có thể đóng góp ý kiến về trang cá nhân của mình <3 Chân thành cảm ơn!***
 
-[Tweeter](https://twitter.com/rimc2t)
+[Twitter](https://twitter.com/rimc2t)
 [Facebook](https://www.facebook.com/rimc2t)
