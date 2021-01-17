@@ -113,6 +113,7 @@ Hơi dài nhưng chỉ 405chars vẫn thỏa < 1024 của đề bài. Cuối cù
 ![hinh10](https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.0-9/139449877_1360956844256980_5107937802172987774_n.png?_nc_cat=110&ccb=2&_nc_sid=730e14&_nc_ohc=c2LKQLlWJnwAX8XJqRI&_nc_ht=scontent.fsgn2-6.fna&oh=652d2a0cf660532758b0dfc732742e23&oe=60277931)
 
 
-***Trên đây là tất cả write-up của mình về bài "Calc.exe Onl", trình còn kém nên làm còn mơ hồ, diễn giải có thể màu mè hoặc không đúng. Mong bạn đọc có thể đóng góp ý kiến <3 Chân thành cảm ơn!***
+***Trên đây là tất cả write-up của mình về bài "Calc.exe Onl", trình còn kém nên làm còn mơ hồ, diễn giải có thể màu mè hoặc không đúng. Mong bạn đọc có thể đóng góp ý kiến về trang cá nhân của mình <3 Chân thành cảm ơn!***
+
 [Tweeter](https://twitter.com/rimc2t)
 [Facebook](https://www.facebook.com/rimc2t)
