@@ -3,6 +3,6 @@
 
     .
     ├── BambooFox-CTF
-    |   ├──[[Web] Calc.exe Online](https://github.com/rimc2t/write-up-cho-vui/tree/main/BambooFox-CTF/%5BWeb%5D%20Calc.exe%20Online)
-    |   ├──[[Web] SSRFrog](https://github.com/rimc2t/write-up-cho-vui/tree/main/BambooFox-CTF/%5BWeb%5D%20SSRFrog)
+    |   ├── [web]Calc.exe Online
+    |   ├── [web]SSRFrog
     └── README.md
