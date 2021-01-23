@@ -5,6 +5,13 @@
     .
     ├── BambooFox-CTF-01-2021
     |   ├── Web-Calc.exe-Online
-    |   ├── Web-SSRFrog
+    |   |   ├── index.php
+    |   |   └── README.md
+    |   |
+    |   └── Web-SSRFrog
+    |       ├── index.html
+    |       ├── index.js
+    |       └── README.md
+    |
     ├──
     └── README.md
