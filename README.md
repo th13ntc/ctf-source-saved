@@ -1,6 +1,6 @@
 # write-up-cho-vui
 
-Ở ĐÂY CÓ NHỮNG CHIẾC WRITE-UP CỦA MỘT CON GÀ ĐẾN TỪ UIT MỚI BẬP BẸ CHƠI CTF
+Ở ĐÂY CÓ NHỮNG SOURCE CỦA CÁC CUỘC THI CTF MÀ MỘT CON GÀ ĐẾN TỪ UIT MỚI BẬP BẸ ĐÃ THAM GIA
 
     .
     ├── BambooFox-CTF-01-2021
