@@ -6,12 +6,11 @@
     ├── BambooFox-CTF-01-2021
     |   ├── Web-Calc.exe-Online
     |   |   ├── index.php
-    |   |   └── README.md
+    |   |   └── payload_injection.txt
     |   |
     |   └── Web-SSRFrog
     |       ├── index.html
-    |       ├── index.js
-    |       └── README.md
+    |       └── index.js
     |
     ├──
     └── README.md
