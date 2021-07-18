@@ -13,14 +13,16 @@ WRITE-UP: [https://th13ntc.gitbook.io/blog/](https://th13ntc.gitbook.io/blog/)
     |
     ├── WannaCTF-05-2021
     |
-    ├── 21webctf
+    ├── 21webctf-06-2021
     |
-    ├── bcactf2.0
+    ├── bcactf2.0-06-2021
     |
-    ├── hcmusCTF
+    ├── hcmusCTF-05-2021
     |
-    ├── pwn2win
+    ├── pwn2win-05-2021
     |
-    ├── redpwn2021
+    ├── redpwn-07-2021
+    |
+    ├── litctf2021
     ├──
     └── README.md
