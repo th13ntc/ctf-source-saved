@@ -2,7 +2,7 @@
 
 Ở ĐÂY CÓ NHỮNG SOURCES CỦA VÀI CUỘC THI CTF MÀ MỘT CON GÀ ĐẾN TỪ UIT MỚI BẬP BẸ ĐÃ THAM GIA
 
-WRITE-UP: [https://th13ntc.gitbook.io/blog/](https://th13ntc.gitbook.io/blog/)
+WRITE-UP: [https://th13ntc.gitbook.io/](https://th13ntc.gitbook.io/)
 
     .
     ├── BambooFox-CTF-01-2021
