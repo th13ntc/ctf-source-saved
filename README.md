@@ -27,5 +27,7 @@ WRITE-UP: [https://th13ntc.gitbook.io/](https://th13ntc.gitbook.io/)
     |
     ├── imaginaryCTF2021
     |
+    ├── rarCTF2021
+    |
     ├──
     └── README.md

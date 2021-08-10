@@ -1,0 +1,6 @@
+import base64
+i = 4117693555152280233235140304313160393372574785286687169479929583036435327748269177565382885337
+
+for j in range(100):
+    flag = base64.urlsafe_b64encode((i).to_bytes(39, byteorder="big"))
+    print(flag)

@@ -1,0 +1,7 @@
+lemonthinker: rarctf{b451c-c0mm4nd_1nj3ct10n_f0r-y0u_4nd_y0ur-l3m0nth1nk3rs_d8d21128bf}
+Fancy Button Generator: rarctf{th0s3_f4ncy_butt0n5_w3r3_t00_cl1ck4bl3_f0r_u5_a4667cb69f}
+Secure Uploader: rarctf{4lw4y5_r34d_th3_d0c5_pr0p3rly!-71ed16}
+MAAS1: rarctf{0v3rk1ll_4s_4_s3rv1c3_3fca0faa}
+MAAS2: rarctf{wh4t_w4s_1_th1nk1ng..._60a4ee96}
+MAAS3: rarctf{rfc8259_15_4_b1t_v4gu3_1a97a3d3}
+MAAS3.5: rarctf{k33p_n3tw0rks_1s0l4t3d_lol_ef2b8ddc}

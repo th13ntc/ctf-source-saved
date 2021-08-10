@@ -36,7 +36,6 @@ class User:
     @router.get("/points", response_model=schemas.JSONMessage, dependencies=[Depends(auth.verify_imaginary_user)])
     def points(self):
         return crud.get_points(self.valid_session)
-
     @router.get("/guess", response_model=schemas.JSONMessage, dependencies=[Depends(auth.verify_imaginary_user)])
     def game(self, choice: Optional[int] = None):
         return crud.guess_number(self.valid_session, self.db, choice)
