@@ -15,9 +15,7 @@ WRITE-UP: [https://th13ntc.gitbook.io/](https://th13ntc.gitbook.io/)
     |
     ├── webctf-06-2021
     |
-    ├── bcactf2.0-06-2021
-    |
-    ├── hcmusCTF-05-2021
+    ├── hcmusCTF-05-2021 (no write up)
     |
     ├── redpwn-07-2021
     |
