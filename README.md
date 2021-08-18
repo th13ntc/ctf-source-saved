@@ -13,13 +13,11 @@ WRITE-UP: [https://th13ntc.gitbook.io/](https://th13ntc.gitbook.io/)
     |
     ├── WannaCTF-05-2021
     |
-    ├── 21webctf-06-2021
+    ├── webctf-06-2021
     |
     ├── bcactf2.0-06-2021
     |
     ├── hcmusCTF-05-2021
-    |
-    ├── pwn2win-05-2021
     |
     ├── redpwn-07-2021
     |
@@ -27,7 +25,15 @@ WRITE-UP: [https://th13ntc.gitbook.io/](https://th13ntc.gitbook.io/)
     |
     ├── imaginaryCTF2021
     |
+    ├── ijCTF2021 (no write up)
+    |
+    ├── uiuctf2021 (no write up)
+    |
     ├── rarCTF2021
+    |
+    ├── inCTF2021 (no write up)
+    |
+    ├── raCTF2021 (no write up)
     |
     ├──
     └── README.md
