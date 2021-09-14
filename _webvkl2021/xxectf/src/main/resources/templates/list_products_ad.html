@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="List User">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>List Product - Admin</title>
+    <link rel="stylesheet" href="/css/nicepage.css" media="screen">
+<link rel="stylesheet" href="/css/List-Product---Admin.css" media="screen">
+    <script class="u-script" type="text/javascript" src="/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/js/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.8.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Lobster:400">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"url": "index.html"
+}</script>
+    <meta property="og:title" content="List Product - Admin">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+  </head>
+  <body class="u-body">
+  <div th:insert="_menu"/>
+    <section class="u-clearfix u-section-1" id="sec-304c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-text u-text-1">V-Store</h3>
+        <h1 class="u-align-center u-custom-font u-font-playfair-display u-text u-text-2">List Product</h1>
+        <p class="u-align-left u-small-text u-text u-text-font u-text-variant u-text-3">
+          <a href="/admin/editProduct" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Add Product</a>
+        </p>
+        <div class="u-expanded-width u-table u-table-responsive u-table-1">
+          <table class="u-table-entity">
+            <colgroup>
+              <col width="6.5%">
+              <col width="53%">
+              <col width="21.3%">
+              <col width="19.2%">
+            </colgroup>
+            <thead class="u-palette-4-light-2 u-table-header u-table-header-1">
+              <tr style="height: 46px;">
+                <th class="u-border-1 u-border-grey-dark-1 u-table-cell">ID</th>
+                <th class="u-border-1 u-border-grey-dark-1 u-table-cell">Product</th>
+                <th class="u-border-1 u-border-grey-dark-1 u-table-cell">Number</th>
+                <th class="u-border-1 u-border-grey-dark-1 u-table-cell">Price</th>
+              </tr>
+            </thead>
+            <tbody class="u-table-body">
+              <tr th:each="p: ${listProducts}" style="height: 25px;">
+                <td class="u-border-1 u-border-grey-30 u-table-cell" th:text="${p.getId_product()}">ID</td>
+                  <td class="u-border-1 u-border-grey-30 u-table-cell"><a th:text="${p.getName_product()}" th:href="@{/admin/editProduct?(id=${p.getId_product()})}">Product</a></td>
+                <td class="u-border-1 u-border-grey-30 u-table-cell" th:text="${p.getNumber()}">Number</td>
+                <td class="u-border-1 u-border-grey-30 u-table-cell" th:text="${p.getPrice()} + ' VNĐ'">Price</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-8413"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.com/" target="_blank">
+        <span>Website Builder Software</span>
+      </a>. 
+    </section>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Edit Info</title>
+    <link rel="stylesheet" href="/css/nicepage.css" media="screen">
+<link rel="stylesheet" href="/css/Edit-Info.css" media="screen">
+    <script class="u-script" type="text/javascript" src="/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/js/nicepage.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/js/Edit-Info/sendJSON.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.8.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster:400">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"url": "/home"
+}</script>
+    <meta property="og:title" content="Edit Info">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+    <link rel="canonical" href="/home">
+    <meta property="og:url" content="/home">
+  </head>
+  <body class="u-body">
+  <div th:insert="_menu"/>
+    <section class="u-align-center u-clearfix u-section-1" id="carousel_23be">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-clearfix u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-gutter-40 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1" th:style="'background-image: url(/getImage?name=' + ${user.getAvt()}+');'" data-image-width="1000" data-image-height="1500" data-href="/upAVT">
+                <div class="u-container-layout u-container-layout-1"></div>
+              </div>
+              <div class="u-container-style u-layout-cell u-palette-2-base u-right-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-valign-middle u-container-layout-2">
+                  <div class="u-form u-form-1">
+                      <form action="/informationUser/edit" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-40 u-form-vertical u-inner-form" style="padding: 0px;" source="custom" name="form" redirect="true">
+                          <div class="u-form-email u-form-group">
+                              <label for="userName" class="u-label u-text-body-alt-color u-label-1">User Name</label>
+                              <input type="text" th:value="${user.getUser_name()}" id="userName" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" readonly>
+                          </div>
+                          <div class="u-form-email u-form-group">
+                              <label for="name" class="u-label u-text-body-alt-color u-label-1">Full Name</label>
+                              <input type="text" th:value="${user.getName()}" placeholder="Full Name" id="name" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" >
+                          </div>
+                          <div class="u-form-email u-form-group">
+                              <label for="email" class="u-label u-text-body-alt-color u-label-1">Email</label>
+                              <input type="email" placeholder="Enter a valid email address" id="email" th:value="${user.getEmail()}" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle">
+                          </div>
+                          <div class="u-form-email u-form-group">
+                              <label for="age" class="u-label u-text-body-alt-color u-label-1">Age</label>
+                              <input type="number" placeholder="Enter a valid age" id="age" min="10" th:value="${user.getAge()}" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle">
+                          </div>
+                          <div class="u-form-email u-form-group">
+                              <label for="pass" class="u-label u-text-body-alt-color u-label-1">Password</label>
+                              <input type="password" placeholder="Enter a valid password" id="pass" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle">
+                          </div>
+
+                          <div class="u-form-group u-form-select u-form-group-3">
+                              <label for="preferred" class="u-label u-text-body-alt-color u-label-1">Preferred Name</label>
+                              <div class="u-form-select-wrapper">
+                                  <select id="preferred" name="select" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle">
+                                      <option th:value="${user.getPreferred()}" selected="" disabled="" hidden="">Choose here</option>
+                                      <option value="user.getName()">Full Name</option>
+                                      <option value="user.getUser_name()">User Name</option>
+                                  </select>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                              </div>
+                          </div>
+
+                          <div class="u-align-center u-form-group u-form-submit">
+                              <button type=button onclick="sendJSON()" class="u-btn u-btn-submit u-button-style u-white u-btn-1" >Update</button>
+                          </div>
+                      </form>
+                  </div>
+                    <h6 class="u-align-center u-text u-text-1" th:text="${msg}" th:if="${msg ne null}"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-8413"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
+        <span>HTML Template</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.com/static-site-generator" target="_blank">
+        <span>Static Site Generator</span>
+      </a>. 
+    </section>
+  </body>
+</html>

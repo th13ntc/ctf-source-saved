@@ -1,0 +1,153 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 100vh;
+}
+
+.u-section-1 .u-text-1 {
+  letter-spacing: 3px;
+  font-weight: 300;
+  width: 255px;
+  margin: 32px auto 0;
+}
+
+.u-section-1 .u-product-1 {
+  min-height: 691px;
+  margin: 49px 0 60px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 532px;
+  height: 514px;
+  margin: 0 auto 0 0;
+}
+
+.u-section-1 .u-group-1 {
+  width: 591px;
+  min-height: 552px;
+  background-image: none;
+  margin: -419px 22px 0 auto;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 21px 55px 30px 50px;
+}
+
+.u-section-1 .u-text-2 {
+  font-weight: 400;
+  margin: 1px 0 0;
+}
+
+.u-section-1 .u-product-price-1 {
+  margin: 17px auto 0;
+}
+
+.u-section-1 .u-text-3 {
+  margin: 32px 0 0;
+}
+
+.u-section-1 .u-form-1 {
+  height: 144px;
+  margin: 77px 91px 0 96px;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: solid;
+}
+
+.u-section-1 .u-text-4 {
+  font-style: italic;
+  margin: -83px 82px 0 105px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-1 {
+    margin-top: 77px;
+  }
+
+  .u-section-1 .u-product-1 {
+    margin-top: 110px;
+    height: auto;
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .u-section-1 .u-group-1 {
+    margin-top: -442px;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-top: -112px;
+    margin-left: -1px;
+    width: 128px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-container-layout-2 {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 520px;
+    height: 502px;
+  }
+
+  .u-section-1 .u-group-1 {
+    width: 520px;
+    margin-top: -430px;
+  }
+
+  .u-section-1 .u-container-layout-2 {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-right: 76px;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-right: 67px;
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-product-1 {
+    margin-top: 117px;
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 320px;
+    height: 309px;
+  }
+
+  .u-section-1 .u-group-1 {
+    width: 320px;
+    margin-top: -237px;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

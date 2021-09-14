@@ -1,0 +1,124 @@
+.u-section-1 {
+  background-image: url("/images/-min.jpg");
+  background-position: 50% 50%;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 100vh;
+}
+
+.u-section-1 .u-shape-1 {
+  width: 461px;
+  height: 461px;
+  margin: 186px 183px 0 auto;
+}
+
+.u-section-1 .u-text-1 {
+  font-family: "Archivo Black";
+  font-size: 6.25rem;
+  margin: -488px 339px 0 150px;
+}
+
+.u-section-1 .u-text-2 {
+  font-weight: 700;
+  margin: 101px 356px 0 123px;
+}
+
+.u-section-1 .u-text-3 {
+  margin: 20px 656px 60px 123px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-shape-1 {
+    width: 420px;
+    height: 438px;
+    margin-top: 144px;
+    margin-right: 150px;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: auto;
+    margin-top: -471px;
+    margin-right: 111px;
+    margin-left: 50px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 256px;
+    margin-left: 23px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 556px;
+    margin-left: 23px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 {
+    background-position: 50.21% 50%;
+  }
+
+  .u-section-1 .u-shape-1 {
+    width: 370px;
+    height: 370px;
+    margin-top: 157px;
+    margin-right: 50px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: -428px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 59px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 359px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-shape-1 {
+    width: 334px;
+    height: 334px;
+    margin-top: 344px;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-size: 5rem;
+    margin-top: -372px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 179px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-shape-1 {
+    width: 234px;
+    height: 234px;
+    margin-top: 401px;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-size: 3.75rem;
+    margin-top: -308px;
+    margin-right: 35px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 0;
+  }
+}

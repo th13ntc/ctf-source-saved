@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="u-expanded-width u-table u-table-responsive u-table-1">
+    <table class="u-table-entity">
+        <colgroup>
+            <col width="6.5%">
+            <col width="53%">
+            <col width="21.3%">
+            <col width="19.2%">
+        </colgroup>
+        <thead class="u-palette-4-light-2 u-table-header u-table-header-1">
+        <tr style="height: 46px;">
+            <th class="u-border-1 u-border-grey-dark-1 u-table-cell">ID</th>
+            <th class="u-border-1 u-border-grey-dark-1 u-table-cell">Product</th>
+            <th class="u-border-1 u-border-grey-dark-1 u-table-cell">Number</th>
+            <th class="u-border-1 u-border-grey-dark-1 u-table-cell">Date</th>
+            <th class="u-border-1 u-border-grey-dark-1 u-table-cell">Price</th>
+        </tr>
+        </thead>
+        <tbody class="u-table-body">
+        <tr th:each="p: ${listBill}" style="height: 25px;">
+            <td th:text="${p.idProduct}" class="u-border-1 u-border-grey-30 u-table-cell" >ID</td>
+            <td th:text="${p.nameProduct}" class="u-border-1 u-border-grey-30 u-table-cell">Product</td>
+            <td th:text="${p.number}" class="u-border-1 u-border-grey-30 u-table-cell" >Number</td>
+            <td th:text="${#dates.format(p.date, 'yyyy-MM-dd')}" class="u-border-1 u-border-grey-dark-1 u-table-cell">Date</td>
+            <td th:text="${p.getPrice()}" class="u-border-1 u-border-grey-30 u-table-cell">Price</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>

