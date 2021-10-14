@@ -1,0 +1,3 @@
+Welcome: ACSC{welcome_to_ACSC_2021!}
+API: ACSC{it_is_hard_to_name_a_flag..isn't_it?}
+Emoji: ACSC{sharks_are_always_hungry}

