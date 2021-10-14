@@ -5,3 +5,5 @@
 WRITE-UP BLOG: [https://th13ntc.gitbook.io/](https://th13ntc.gitbook.io/)
 
 SAVED GITHUB: https://github.com/th13ntc/th13ntc.gitbook.io
+
+# latest update: 14/10/2021
